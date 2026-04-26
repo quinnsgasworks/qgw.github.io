@@ -3,261 +3,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Quinn's Gas Works — Gas Safe Engineer | Boiler Repairs, Servicing &amp; Plumbing</title>
-  <meta name="description" content="Quinn's Gas Works — Gas Safe registered engineer. Boiler breakdowns, installation, servicing, landlord safety checks, plumbing and heating. Call 07533 872248." />
-  <meta property="og:title" content="Quinn's Gas Works" />
-  <meta property="og:description" content="Gas Safe registered engineer. Boilers, servicing, plumbing &amp; heating." />
+  <title>Quinn's Gas Works — Gas Safe Engineer Manchester | Boiler Repairs, Servicing &amp; Plumbing</title>
+  <meta name="description" content="Gas Safe registered engineer covering Manchester and the M60 loop. Boiler breakdowns, installation, servicing, landlord safety checks, plumbing and heating. Call 07533 872248." />
+  <meta name="keywords" content="gas engineer Manchester, boiler repair Manchester, boiler installation Manchester, landlord gas safety certificate Manchester, CP12 Manchester, plumbing M60, heating engineer Manchester, gas safe engineer Salford, Stockport, Trafford, Oldham" />
+  <meta name="author" content="Quinn's Gas Works" />
+  <meta name="geo.region" content="GB-MAN" />
+  <meta name="geo.placename" content="Manchester" />
+  <meta property="og:title" content="Quinn's Gas Works — Gas Safe Engineer Manchester" />
+  <meta property="og:description" content="Gas Safe registered engineer covering Manchester and the M60 loop. Boilers, servicing, plumbing &amp; heating." />
   <meta property="og:type" content="website" />
+  <meta property="og:image" content="logo.png" />
+  <link rel="canonical" href="./" />
   <link rel="icon" type="image/png" href="logo.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --navy: #173d7a;
-      --navy-dark: #0f2a55;
-      --navy-darker: #0a1f40;
-      --orange: #f37021;
-      --orange-dark: #e25d10;
-      --bg: #ffffff;
-      --text: #14213d;
-      --muted: #5b6478;
-      --border: #e3e6ec;
-      --card: #ffffff;
-      --secondary: #f4f6fa;
-      --whatsapp: #25d366;
-      --facebook: #1877f2;
-    }
-    * { box-sizing: border-box; }
-    html, body { margin: 0; padding: 0; }
-    body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      color: var(--text);
-      background: var(--bg);
-      line-height: 1.5;
-      -webkit-font-smoothing: antialiased;
-    }
-    a { text-decoration: none; color: inherit; }
-    img { max-width: 100%; display: block; }
-    .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
-
-    /* Header */
-    .header {
-      background: #fff;
-      border-bottom: 1px solid var(--border);
-    }
-    .header-inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 16px 0;
-    }
-    .logo { height: 56px; }
-    @media (max-width: 600px) { .logo { height: 44px; } }
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 12px 20px;
-      border-radius: 10px;
-      font-weight: 600;
-      font-size: 15px;
-      cursor: pointer;
-      border: none;
-      transition: background 0.15s ease, transform 0.05s ease;
-    }
-    .btn-orange { background: var(--orange); color: #fff; }
-    .btn-orange:hover { background: var(--orange-dark); }
-    .btn-ghost {
-      background: rgba(255,255,255,0.1);
-      color: #fff;
-      border: 1px solid rgba(255,255,255,0.25);
-      backdrop-filter: blur(6px);
-    }
-    .btn-ghost:hover { background: rgba(255,255,255,0.18); }
-    .header .btn-orange { padding: 10px 16px; }
-    @media (max-width: 600px) { .header .btn-orange { display: none; } }
-
-    /* Hero */
-    .hero {
-      background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 50%, var(--navy-darker) 100%);
-      color: #fff;
-      padding: 80px 0 96px;
-    }
-    .hero-content { max-width: 720px; }
-    .badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: rgba(255,255,255,0.1);
-      backdrop-filter: blur(6px);
-      padding: 6px 14px;
-      border-radius: 999px;
-      font-size: 14px;
-      font-weight: 500;
-      margin-bottom: 24px;
-    }
-    .badge-icon { color: var(--orange); }
-    .hero h1 {
-      font-size: clamp(32px, 5vw, 56px);
-      line-height: 1.1;
-      font-weight: 700;
-      margin: 0 0 24px;
-    }
-    .hero p {
-      font-size: clamp(16px, 2vw, 19px);
-      color: rgba(255,255,255,0.82);
-      margin: 0 0 32px;
-      max-width: 600px;
-    }
-    .hero-buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-
-    /* Sections */
-    section { padding: 80px 0; }
-    .section-head { text-align: center; margin-bottom: 48px; }
-    .section-head h2 {
-      font-size: clamp(28px, 4vw, 40px);
-      font-weight: 700;
-      margin: 0 0 12px;
-    }
-    .section-head p { color: var(--muted); font-size: 18px; margin: 0; }
-
-    /* Services grid */
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
-    }
-    @media (max-width: 900px) { .grid { grid-template-columns: repeat(2, 1fr); } }
-    @media (max-width: 600px) { .grid { grid-template-columns: 1fr; } }
-
-    .service-card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 28px;
-      transition: box-shadow 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
-    }
-    .service-card:hover {
-      box-shadow: 0 10px 30px rgba(20,33,61,0.08);
-      border-color: rgba(243,112,33,0.3);
-      transform: translateY(-2px);
-    }
-    .service-icon {
-      width: 48px;
-      height: 48px;
-      border-radius: 10px;
-      background: var(--navy);
-      color: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 16px;
-    }
-    .service-card h3 { font-size: 20px; font-weight: 600; margin: 0 0 8px; }
-    .service-card p { color: var(--muted); margin: 0; }
-
-    /* Trust band */
-    .trust { background: var(--secondary); }
-    .trust .grid { grid-template-columns: repeat(3, 1fr); }
-    @media (max-width: 700px) { .trust .grid { grid-template-columns: 1fr; } }
-    .trust-item { text-align: center; }
-    .trust-icon {
-      width: 56px;
-      height: 56px;
-      border-radius: 999px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      color: #fff;
-      margin-bottom: 16px;
-    }
-    .trust-icon.navy { background: var(--navy); }
-    .trust-icon.orange { background: var(--orange); }
-    .trust-item h3 { font-size: 18px; font-weight: 600; margin: 0 0 6px; }
-    .trust-item p { color: var(--muted); margin: 0; font-size: 14px; }
-
-    /* Contact */
-    .contact-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 16px;
-      max-width: 760px;
-      margin: 0 auto;
-    }
-    @media (max-width: 600px) { .contact-grid { grid-template-columns: 1fr; } }
-    .contact-card {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 20px;
-      transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
-    }
-    .contact-card:hover {
-      border-color: var(--orange);
-      box-shadow: 0 6px 20px rgba(20,33,61,0.06);
-      transform: translateY(-2px);
-    }
-    .contact-icon {
-      width: 48px;
-      height: 48px;
-      border-radius: 999px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #fff;
-      flex-shrink: 0;
-    }
-    .contact-icon.orange { background: var(--orange); }
-    .contact-icon.navy { background: var(--navy); }
-    .contact-icon.whatsapp { background: var(--whatsapp); }
-    .contact-icon.facebook { background: var(--facebook); }
-    .contact-label { font-size: 13px; color: var(--muted); margin: 0 0 2px; }
-    .contact-value { font-weight: 600; margin: 0; word-break: break-word; }
-
-    /* Footer */
-    .footer {
-      background: var(--navy-darker);
-      color: rgba(255,255,255,0.75);
-      padding: 40px 0;
-    }
-    .footer-inner {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-    }
-    .footer img {
-      height: 40px;
-      filter: brightness(0) invert(1);
-      opacity: 0.9;
-    }
-    .footer p { margin: 0; font-size: 14px; }
-    @media (max-width: 600px) {
-      .footer-inner { flex-direction: column; text-align: center; }
-    }
-
-    /* Inline SVG icon sizing */
-    .icon { width: 20px; height: 20px; stroke-width: 2; }
-    .icon-sm { width: 16px; height: 16px; }
-    .icon-lg { width: 24px; height: 24px; }
-    .icon-xl { width: 28px; height: 28px; }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
   <!-- Header -->
   <header class="header">
     <div class="container header-inner">
-      <a href="#"><img src="logo.png" alt="Quinn's Gas Works" class="logo" /></a>
+      <a href="index.html"><img src="logo.png" alt="Quinn's Gas Works" class="logo" /></a>
       <a href="tel:07533872248" class="btn btn-orange">
         <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
         07533 872248
@@ -272,8 +40,8 @@
         <svg class="icon icon-sm badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
         Gas Safe Registered &middot; No. 979693
       </div>
-      <h1>Trusted gas engineer for your home and business</h1>
-      <p>From boiler breakdowns to landlord safety checks, Quinn's Gas Works delivers fast, friendly and fully certified service you can rely on.</p>
+      <h1>Trusted gas engineer for Manchester &amp; the M60 loop</h1>
+      <p>From boiler breakdowns to landlord safety checks, Quinn's Gas Works delivers fast, friendly and fully certified service across Greater Manchester.</p>
       <div class="hero-buttons">
         <a href="tel:07533872248" class="btn btn-orange">
           <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
@@ -288,61 +56,67 @@
   </section>
 
   <!-- Services -->
-  <section>
+  <section id="services">
     <div class="container">
       <div class="section-head">
         <h2>What we do</h2>
-        <p>Everything you need from a local gas engineer.</p>
+        <p>Click any service to find out more.</p>
       </div>
       <div class="grid">
 
-        <div class="service-card">
+        <a href="boiler-breakdowns.html" class="service-card">
           <div class="service-icon">
             <svg class="icon icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>
           </div>
           <h3>Boiler Breakdowns</h3>
           <p>Fast, reliable repairs to get your heating back up and running.</p>
-        </div>
+          <span class="service-link">Learn more →</span>
+        </a>
 
-        <div class="service-card">
+        <a href="boiler-installation.html" class="service-card">
           <div class="service-icon">
             <svg class="icon icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
           </div>
           <h3>Boiler Installation</h3>
           <p>Professional installation of new boilers, fully tested and certified.</p>
-        </div>
+          <span class="service-link">Learn more →</span>
+        </a>
 
-        <div class="service-card">
+        <a href="servicing.html" class="service-card">
           <div class="service-icon">
             <svg class="icon icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
           </div>
           <h3>Servicing</h3>
           <p>Annual boiler servicing to keep your system safe and efficient.</p>
-        </div>
+          <span class="service-link">Learn more →</span>
+        </a>
 
-        <div class="service-card">
+        <a href="landlord-safety-checks.html" class="service-card">
           <div class="service-icon">
             <svg class="icon icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
           </div>
           <h3>Landlord Safety Checks</h3>
           <p>Gas Safe certified inspections and CP12 certificates for landlords.</p>
-        </div>
+          <span class="service-link">Learn more →</span>
+        </a>
 
-        <div class="service-card">
+        <a href="plumbing.html" class="service-card">
           <div class="service-icon">
             <svg class="icon icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
           </div>
           <h3>Plumbing</h3>
           <p>General plumbing repairs and installations for your home.</p>
-        </div>
+          <span class="service-link">Learn more →</span>
+        </a>
 
-        <div class="service-card">
+        <a href="heating.html" class="service-card">
           <div class="service-icon">
             <svg class="icon icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"/></svg>
           </div>
           <h3>Heating</h3>
           <p>Full heating system repairs, upgrades and maintenance.</p>
-        </div>
+          <span class="service-link">Learn more →</span>
+        </a>
 
       </div>
     </div>
@@ -373,6 +147,57 @@
           <h3>All Work Guaranteed</h3>
           <p>Quality workmanship with honest, upfront pricing.</p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Areas We Cover -->
+  <section class="areas" id="areas">
+    <div class="container areas-content">
+      <div class="section-head">
+        <h2>Areas we cover</h2>
+        <p>Proudly serving Manchester and the M60 loop.</p>
+      </div>
+      <p class="areas-intro">Quinn's Gas Works covers the whole of Greater Manchester — from the city centre out to the M60 ring road and the surrounding suburbs. If you're not sure whether we cover you, just give us a quick call and we'll let you know straight away.</p>
+
+      <div class="areas-pills">
+        <span class="pill">Manchester</span>
+        <span class="pill">Salford</span>
+        <span class="pill">Stockport</span>
+        <span class="pill">Trafford</span>
+        <span class="pill">Sale</span>
+        <span class="pill">Altrincham</span>
+        <span class="pill">Stretford</span>
+        <span class="pill">Urmston</span>
+        <span class="pill">Eccles</span>
+        <span class="pill">Swinton</span>
+        <span class="pill">Worsley</span>
+        <span class="pill">Prestwich</span>
+        <span class="pill">Whitefield</span>
+        <span class="pill">Middleton</span>
+        <span class="pill">Oldham</span>
+        <span class="pill">Ashton-under-Lyne</span>
+        <span class="pill">Denton</span>
+        <span class="pill">Droylsden</span>
+        <span class="pill">Audenshaw</span>
+        <span class="pill">Chorlton</span>
+        <span class="pill">Didsbury</span>
+        <span class="pill">Withington</span>
+        <span class="pill">Levenshulme</span>
+        <span class="pill">Cheadle</span>
+        <span class="pill">Gatley</span>
+        <span class="pill">Heald Green</span>
+        <span class="pill">Wythenshawe</span>
+        <span class="pill">Northenden</span>
+      </div>
+
+      <div class="postcode-block">
+        <h3>Postcodes covered</h3>
+        <p>
+          <strong>Manchester (M):</strong> M1, M2, M3, M4, M5, M6, M7, M8, M9, M11, M12, M13, M14, M15, M16, M17, M18, M19, M20, M21, M22, M23, M24, M25, M26, M27, M28, M30, M32, M33, M34, M35, M40, M41, M43, M44, M45, M46, M50, M60, M90<br>
+          <strong>Stockport (SK):</strong> SK1, SK2, SK3, SK4, SK5, SK6, SK7, SK8<br>
+          <strong>Oldham (OL):</strong> OL1, OL2, OL4, OL6, OL7, OL8, OL9
+        </p>
       </div>
     </div>
   </section>
@@ -434,7 +259,7 @@
   <footer class="footer">
     <div class="container footer-inner">
       <img src="logo.png" alt="Quinn's Gas Works" />
-      <p>&copy; <span id="year"></span> Quinn's Gas Works. Gas Safe Reg. 979693.</p>
+      <p>&copy; <span id="year"></span> Quinn's Gas Works. Gas Safe Reg. 979693. Covering Manchester &amp; the M60 loop.</p>
     </div>
   </footer>
 
