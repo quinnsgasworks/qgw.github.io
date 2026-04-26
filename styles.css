@@ -379,11 +379,11 @@ section { padding: 80px 0; }
 
 /* Gas Safe badge in trust section */
 .trust-gas-safe {
-  width: 110px;
+  width: 64px;
   height: auto;
   margin: 0 auto 16px;
   display: block;
-  border-radius: 10px;
+  border-radius: 6px;
 }
 
 /* About section */
