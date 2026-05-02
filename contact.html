@@ -57,6 +57,37 @@
     gtag('js', new Date());
     gtag('config', 'G-TJTSRCYYQ6');
   </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Plumber",
+  "name": "Quinn's Gas Works",
+  "description": "Gas Safe registered engineer covering Greater Manchester and Bolton. Boiler repairs, servicing, installation, landlord safety checks and plumbing.",
+  "telephone": "+447533872248",
+  "email": "quinnsgasworks@gmail.com",
+  "url": "https://quinnsgas.works",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Kearsley",
+    "addressLocality": "Bolton",
+    "addressRegion": "Greater Manchester",
+    "postalCode": "BL4",
+    "addressCountry": "GB"
+  },
+  "areaServed": [
+    {"@type": "AdministrativeArea", "name": "Greater Manchester"},
+    {"@type": "AdministrativeArea", "name": "Bolton"}
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "name": "Gas Safe Registration",
+    "value": "979693"
+  },
+  "sameAs": [
+    "https://www.facebook.com/Quinnsgasworks/"
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -162,9 +193,15 @@
             <label for="email">Email address</label>
             <input type="email" id="email" name="email" placeholder="john@example.com" />
           </div>
-          <div class="form-group">
-            <label for="service">Nature of enquiry *</label>
-            <input type="text" id="service" name="service" required placeholder="e.g. Boiler breakdown, annual service, CP12..." />
+          <div class="form-row">
+            <div class="form-group">
+              <label for="service">Nature of enquiry *</label>
+              <input type="text" id="service" name="service" required placeholder="e.g. Boiler breakdown, annual service, CP12..." />
+            </div>
+            <div class="form-group">
+              <label for="postcode">Your postcode *</label>
+              <input type="text" id="postcode" name="postcode" required placeholder="e.g. BL4, M28..." />
+            </div>
           </div>
           <div class="form-group">
             <label for="boiler_model">Boiler make / model (if known)</label>
@@ -179,7 +216,7 @@
         </form>
         <div class="form-success" id="form-success" style="display:none;">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="48" height="48"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-          <p>Thanks! Your message has been sent. Aaron will be in touch soon.</p>
+          <p>Thanks for getting in touch. I'll get back to you as soon as I can.</p>
         </div>
       </div>
 
